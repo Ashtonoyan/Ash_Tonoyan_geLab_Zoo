@@ -5,7 +5,8 @@ export abstract class Animal implements Animals {
         public name: string,
         public age: number,
         public species: string,
-        public sound: string
+        public sound: string,
+        public type: "pet" | "wild"
     ) {}
 
 }

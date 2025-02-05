@@ -10,7 +10,7 @@ export class Lion<T> extends Animal<T> {
     }
 
     getIfto():string{
-        return `Name is ${this.name}, age is ${this.age}, "species" ${this.species} `;
+        return `Name is ${this.name}, age is ${this.age}, "species" ${this.species}. Type is ${this.type} `;
     }
 }
 

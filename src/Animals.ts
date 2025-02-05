@@ -1,8 +1,8 @@
 import {Animal} from "./class_Animals";
 
-export class Lion extends Animal {
-    constructor(name: string, age: number, species: string, sound: string) {
-        super(name, age, species, sound, "wild");
+export class Lion<T> extends Animal<T> {
+    constructor(name: string, age: number, species: string, sound: string, region: T) {
+        super(name, age, species, sound, "wild", region);
     }
 
     makesound():void{
@@ -14,9 +14,9 @@ export class Lion extends Animal {
     }
 }
 
-export class Dog extends Animal {
-    constructor(name: string, age: number, species: string, sound: string) {
-        super(name, age, species, sound, "pet");
+export class Dog<T> extends Animal<T> {
+    constructor(name: string, age: number, species: string, sound: string, region: T) {
+        super(name, age, species, sound, "pet", region);
     }
 
     makesound():void{
@@ -28,9 +28,9 @@ export class Dog extends Animal {
     }
 }
 
-export class Bear extends Animal {
-    constructor(name: string, age: number, species: string, sound: string) {
-        super(name, age, species, sound, "wild");
+export class Bear<T> extends Animal<T> {
+    constructor(name: string, age: number, species: string, sound: string, region: T) {
+        super(name, age, species, sound, "wild", region);
     }
     makesound():void{
         console.log(`${this.name} "makes" ${this.sound}`)
@@ -40,9 +40,9 @@ export class Bear extends Animal {
     }
 }
 
-export class Wolf extends Animal {
-    constructor(name: string, age: number, species: string, sound: string) {
-        super(name, age, species, sound, "wild");
+export class Wolf<T> extends Animal<T> {
+    constructor(name: string, age: number, species: string, sound: string, region: T) {
+        super(name, age, species, sound, "wild", region);
     }
     makesound():void{
         console.log(`${this.name} "makes" ${this.sound}`);
@@ -52,9 +52,9 @@ export class Wolf extends Animal {
     }
 }
 
-export class Tiger extends Animal {
-    constructor(name: string, age: number, species: string, sound: string) {
-        super(name, age, species, sound, "wild");
+export class Tiger<T> extends Animal<T> {
+    constructor(name: string, age: number, species: string, sound: string, region: T) {
+        super(name, age, species, sound, "wild", region);
     }
     makesound():void{
         console.log(`${this.name} "makes" ${this.sound}`);
